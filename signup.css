@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}    
+#formbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    padding: 25px;
+
+}
+#signupcontent{
+    padding: 20px;
+    border-radius: 25px;
+    height:60vh;
+    width: 70vh;
+    background-color: #01051d93;
+    color: aliceblue;
+}
+.info1{
+    padding:3px;
+
+}
+
+#create{
+    font-size: 12px;
+    padding-left:5px ;
+}
+input{
+    width:95%;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    padding: 2px 5px 2px 5px;
+}
+#signup{
+    width: 70px;
+    height: 25px;
+    font-family:'Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: #000a42;
+}
+label{
+    font-size: 13px;
+    padding-left: 5px;
+}
+#center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#already_acc{
+    font-size: 11px;
+}

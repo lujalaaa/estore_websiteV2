@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="  crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+       <header>
+      <div id="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="Product.html">Product</a>
+        <a href="AboutUs.html">About Us</a>
+      </div>
+      <div id="search">
+        <input type="text" placeholder="Search In Hop&Shop" id="search_bar" />
+        <div id="searchbutton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <span id="cart"
+          ><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a
+        ></span>
+      </div>
+      <div id="login_ref_panel">
+        <a href="login.html" id="login">Log In</a>
+        <a href="Sign Up.html" id="signUp">Sign Up</a>
+      </div>
+    </header>
+<!-- main content -->
+    <div class="container">
+      <div id="login_form">
+        <form action="login_process.php" method="post">
+          <div class="box1">
+            <h1>Login</h1>
+          </div>
+          <div class="box1">
+           <!--- <lable>Username</lable>-->
+            <input type="text" id="username" name="username" placeholder="Username"/>
+          </div>
+          <div class="box1">
+           <!--- <lable>Password</lable>-->
+            <input type="Password" id="Password" name="Password" placeholder="Password"/>
+          </div>
+          <div class="box2" id="box">
+            <div><input type="checkbox" id="remember"/><label>Remember Me</label></div>
+            <a href="#" id="forg">forgot password?</a>
+          </div>
+          <div class="box1" >
+            <input type="Submit" id="login" value="Login" />
+            <div id="dont_acc">
+              <p>
+                Don't have an account?
+                <a href="Sign Up.html" style="color: rgb(194, 32, 64)">
+                  Sign Up
+                </a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+  </body>
+</html>

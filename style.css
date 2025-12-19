@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background-color:#01051d ;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+body{
+    background-color: rgb(199, 215, 230);
+}
+
+#login_ref_panel  #signUp{
+    background-color: beige;
+    color:#01051d;
+    font-weight:bold;
+    padding: 5px;
+}
+#login_ref_panel  #signUp:hover{
+    background-color: bisque;
+}
+#cart a{
+    height: 25px;
+    width: 25px;
+    color: aliceblue;
+    text-align: center;
+    padding: 3px;
+    margin: 5px;
+}
+#search{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#search_bar{
+    height: 25px;
+    width: 160px;
+    border-radius: 25px 0 0 25px;
+    background-color: aliceblue;
+    font-size: small;
+    padding: 8px;
+    
+}
+#searchbutton{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(255, 106, 0);
+    border-radius: 0 25px 25px 0 ;
+    text-align: center;
+    color: aliceblue;
+    font-size: 10px;
+    padding:7px 7px;
+}
+
+#login_ref_panel a, #navbar a{
+
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
+    color:beige ;
+    padding: 5px;
+    border-radius: 10px;
+    font-family:'Courier New', Courier, monospace;
+     font-size: small;
+    
+}
+#logo img{ 
+    height: 6vh;
+    width: 17vh;
+    margin: 10px 50px 10px 50px;
+}
+#navbar a:hover,#login_ref_panel a:hover{
+    background-color:#2e2e377b;
+    
+}
+/* main content */
+#main_content{
+    height:1000px;
+}
+
+
+
+
+/* footer section */
+footer{
+    background-color:#25325b76;
+    border-top: #01051d;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#footlinks a{
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    margin: 15px;
+}

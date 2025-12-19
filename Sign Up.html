@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+       <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="  crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+       <header>
+      <div id="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="Product.html">Product</a>
+        <a href="AboutUs.html">About Us</a>
+      </div>
+      <div id="search">
+        <input type="text" placeholder="Search In Hop&Shop" id="search_bar" />
+        <div id="searchbutton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <span id="cart"
+          ><a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a
+        ></span>
+      </div>
+      <div id="login_ref_panel">
+        <a href="login.html" id="login">Log In</a>
+        <a href="Sign Up.html" id="signUp">Sign Up</a>
+      </div>
+    </header>
+    <!--  main content -->
+    <div id="formbox">
+      <form action="signup_process.php" method="post" id="signupcontent">
+        <div class="info1">
+          <h1>Get Started</h1>
+          <p id="create">create your own account.</p>
+        </div>
+        <div class="info1">
+          <label>Full Name</label><br />
+          <input
+            type="text" placeholder="click to enter full name" class="input"/>
+        </div>
+        <div class="info1">
+          <label>Email</label><br/>
+          <input type="text" placeholder="click to enter email" class="input" />
+        </div>
+        <div class="info1">
+          <label>Password</label><br />
+          <input type="password" placeholder="click to enter password" class="input"/><br />
+        </div>
+        <div class="info1" id="center">
+          <input type="submit" id="signup" value="Sign Up" />
+          <p id="already_acc">
+            Already have an account?
+            <a href="login.html" style="color: rgb(221, 41, 77)">login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+  </body>
+</html>
