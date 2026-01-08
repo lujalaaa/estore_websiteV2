@@ -48,7 +48,8 @@
         </div>
         <div class="info1">
           <label>Email</label><br/>
-          <input type="text" placeholder="click to enter email" class="input" />
+          <input type="text" placeholder="click to enter email" class="input" id="email-field" onkeyup="emailValidation()" spellcheck="false" />
+          <div id="email-error"></div>
         </div>
         <div class="info1">
           <label>Password</label><br />
@@ -58,11 +59,28 @@
           <input type="submit" id="signup" value="Sign Up" />
           <p id="already_acc">
             Already have an account?
-            <a href="login.html" style="color: rgb(221, 41, 77)">login</a>
+            <a href="login.html" style="color: #de294d">login</a>
           </p>
         </div>
       </form>
     </div>
     <!-- footer -->
+  <script>
+  function emailValidation(){
+    var emailField=document.getElementById("email-field");
+    var emailError=document.getElementById("email-error");
+
+    if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+  {
+    emailError.innerHTML="please enter a valid email!";
+    emailField.style.border="1.5px solid #de294d";
+    return false;
+  }
+  emailError.innerHTML=" ";
+  emailField.style.border="none";
+  return true;
+
+  }
+  </script>
   </body>
 </html>

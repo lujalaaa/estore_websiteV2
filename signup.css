@@ -53,3 +53,12 @@ label{
 #already_acc{
     font-size: 11px;
 }
+#email-field{
+    
+}
+#email-error{
+    font-size: 12px;
+    margin-top: 2px;
+    padding-left: 9px;
+    color: hwb(348 16% 13%);
+}
